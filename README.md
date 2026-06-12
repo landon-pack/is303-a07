@@ -1,1 +1,1 @@
-In this repository I have included 4 files. A program that scrapes data from the website "https://books.toscrape.com/" and puts it into printed charts and a bar graph. I included the database that the data is placed into, the chart, and a written analysis of my findings and what I could improve upon.
+A Python data pipeline that scrapes book listings from books.toscrape.com, stores the data in a SQLite database, analyzes pricing and rating trends with Pandas, and produces a bar chart visualization.
