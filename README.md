@@ -1,0 +1,1 @@
+In this repository I have included a python data pipeline that scrapes book listings from books.toscrape.com, stores the data in a SQLite database, analyzes pricing and rating trends with Pandas, and produces a bar chart visualization. I have included the program, the chart, the database, and a written analysis of what could be improved upon.
