@@ -1,0 +1,30 @@
+1. Dataset Description. What data did you collect? From where? How many records? What are the columns/fields?
+    For this project I collected data from the website "books.toscrape.com". I pulled the title, price, rating, and in stock data.
+     I only pulled 60 records as I was only scraping 3 pages but each page has 20 entries.
+     The columns are: title, price, instock, and rating.
+
+
+2. Pipeline Description. Walk through each step of your pipeline: what does each function do? How do the pieces connect?
+In my pipeline I have 6 different functions. The first function fetches the website url and makes sure that we can connect to it. 
+It searches for a response code of 200 and then pulls the html from the site. My second function actually scrapes the data.
+It pulls the data that is needed for each column to be created. My next function stores the data and checks for duplicates. If there is a duplicate title, it is skipped.
+Next, I have the analyze function that creates printed tables for different pieces of the data and uses pandas to tell me different things.
+I use the visualize function to create a bar chart of the average price by rating for the books.
+My final function is the main function which connects everything and makes the whole thing run.
+
+
+3. Findings. What did your analysis reveal? Reference your groupby results and chart. What was surprising or interesting?
+My analysis shows that there are more books with 1 star ratings than any other rating. The most expensive book cost 57.31 pounds.
+One thing that was surprising to me was that there wasnt really a correlation between price and rating. I would have expected the best books to either be the most expensive or the cheapest.
+I thought that it would either be more expensive because the author could charge more for the demand or the cheapest which would lead it to have more reviews inflating the rating.
+The data did not show what I expected with the 5 star books having the cheapest average price.
+
+
+4. Ethical Considerations. How did you ensure your data collection was ethical? Did you check robots.txt? Did you use rate limiting? Are there any concerns about the data you collected?
+To ensure my data was ethical I first looked to see if I could find anything in the robots file but it was empty. The page didn't exist. I knew that the data was free to public use because it states on the website it's designed to teach us web scraping/
+I did use rate limiting of 5 seconds per request so I wouldn't overload the server. I don't really have any concerns since I know its just test data but if I were to scrape from another website I would be a lot more careful.
+
+
+5. Limitations. What are the limits of your analysis? What would you do differently with more time?
+I would say that the limitation is that you cant pull the data on how many people reviewed each book. This makes it so you can't really tell how accurate the ratings are since it could be just one person skewing the data.
+With more time, I would scrape more pages to make sure that the data is better represented. I would also maybe add more to my analysis and pull data on the cheapest book or pull the description for specific books that fit a specification such as highest rating or lowest price.
