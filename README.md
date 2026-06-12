@@ -1,1 +1,0 @@
-A Python data pipeline that scrapes book listings from books.toscrape.com, stores the data in a SQLite database, analyzes pricing and rating trends with Pandas, and produces a bar chart visualization.
